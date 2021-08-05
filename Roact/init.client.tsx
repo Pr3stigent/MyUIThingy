@@ -3,7 +3,6 @@ import { Players } from "@rbxts/services";
 import Roact from "@rbxts/roact";
 import RoactRodux from "@rbxts/roact-rodux";
 
-import BarUI from "client/Roact/Components/BarUI";
 import RegionNotifier from "client/Roact/Components/RegionNotifier";
 
 import Store from "./Rodux/Store";
@@ -14,7 +13,6 @@ const playerGui = player.WaitForChild("PlayerGui") as PlayerGui;
 function Main() {
 	return (
 		<screengui>
-			<BarUI />
 			<RegionNotifier Font={Enum.Font.SpecialElite} />
 		</screengui>
 	);
